@@ -88,4 +88,36 @@ echo("Autor: ".$posts[0]["autor"]."<br>");
 echo("Visualizações: ".$posts[0]["visualizacao"]."<br>");
 echo ("<br>");
 
+echo("Para fixar: <br>");
+
+$aluno = [
+
+    "nome"=>"Isaac",
+    "notas"=>[7,8,9,10]
+
+];
+
+echo (array_sum($aluno["notas"])); //método para somar os itens
+
+echo("<br>");
+
+$sum = array_sum($aluno["notas"]);
+$media = $sum/4;
+
+echo(" A média do aluno é ".$media);
+
+echo("<br>");
+
+
+sort($aluno["notas"]);
+
+
+echo ("A menor nota foi " .$aluno["notas"][0]);
+
+echo("<br>");
+
+echo ("A maior nota foi " .$aluno["notas"][3]);
+
+echo("<br>");
+
 ?>
